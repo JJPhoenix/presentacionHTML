@@ -1,0 +1,259 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Presentacion HTML</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="img/img1.jpg">
+                    <h1 style="text-shadow: 10px 7px #0b1b4b; color: #2a4f8e;">Primera sesion</h1>
+					<h2 style="color: #2a4f8e; text-shadow: 5px 3px #1c1e20">
+						<small>Instructores: </small> Javier Marcos & Manuel Varillas
+					</h2>
+                </section>
+
+				<section>
+					<h1>Objetivos:</h1>
+					<ol>
+						<li>Explicar el funcionamiento basico de la estructura de una web</li>
+						<li>Mostrar el alcance de las tecnologias de diseño web</li>
+						<li>Explicacion de UX and UI</li>
+					</ol>
+
+				</section>
+
+				<section id="Indice">
+					<h2>Indice</h2>
+					<ul>
+						<li>Front-end & Back-end</li>
+						<li>HTML5</li>
+						<li>CSS3</li>
+						<li>Herramienta</li>
+					</ul>
+				</section>
+
+				<section id="FrontEnd">
+					<section data-background="#dddddd">
+						<img src="img/img2.jpg">
+					</section>
+					<section>
+						<h1>FrontEnd</h1>
+						<p>Frontend es la parte de un sitio web que interactúa con los usuarios, por eso decimos que está
+							del lado del cliente.</p>
+					</section>
+					<section>
+						<h1>BackEnd</h1>
+						<p>
+							Backend es la capa de acceso a datos de un software o cualquier dispositivo, que no es
+							directamente accesible por los usuarios, además contiene la lógica de la aplicación que
+							maneja dichos datos.
+						</p>
+					</section>
+					<section>
+						<h2 class="fragment fade-in-then-semi-out">Tema central</h2>
+						<p class="fragment fade-in-then-semi-out">"El desarrollo Front-End ha cambiado bastante en los últimos años. En el pasado había una
+							separación muy clara entre la parte de Front-End y el desarrollo Back-End. Actualmente,
+							existen perfiles mixtos, y un abanico de tecnologías que, muchas veces, haga hacerte pensar
+							en qué lado te encuentras."</p>
+					</section>
+					<section>
+						<h3>Un gran panorama</h3>
+						<img class="fragment grow" src="img/front-end.png">
+					</section>
+					<section>
+						<h3></h3>
+						<img class="fragment fade-in-then-semi-out" src="img/img3.jpg">
+					</section>
+					<section>
+						<h3></h3>
+						<img class="fragment fade-in-then-semi-out" src="img/auto.jpeg">
+					</section>
+				</section>
+
+				<section id="html1">
+					<section>
+						<h1>HTML5</h1>
+						<h4>HTML es el predominante lenguaje de marcados(markup language) usado para:</h4>
+						<ol>
+							<li>Describir el contenido de una web</li>
+							<li>Como se presentaran los datos en el (World Wide Web)</li>
+						</ol>
+						<p class="fragment" style="color: #dc322f">Otro lenguaje con las mismas caracteristicas pero menos usado es XML</p>
+					</section>
+					<section>
+						<h1>Caracteristicas</h1>
+						<ol>
+							<li class="fragment">Incluye una redifinicion de <i>markup elements</i></li>
+							<li class="fragment">Ha sido establecido como estandar de diseño web por el W3C</li>
+							<li class="fragment">El termino <i>HTML5</i> también a sido usado para referir a un numero de otros nuevas tecnologias y <i>APIs</i></li>
+						</ol>
+					</section>
+					<section>
+						<h2>Principales mejoras</h2>
+						<ul>
+							<li>
+								Mejora la definición semántica de los elementos de la pagina
+							</li>
+							<li>
+								Hace que el contenido web sea universal e independiente del dispositivo utilizado.
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Puro div</h2>
+						<img src="img/Div.png">
+					</section>
+					<section>
+						<h3>Reemplazo de div</h3>
+						<p>HTML5 reemplaza los mas usados DIVs con elemento con sentido semantico</p>
+
+					</section>
+					<section>
+						<h3>Reemplazo de div</h3>
+						<img src="img/div2.png">
+					</section>
+					<section>
+						<h1>Algunos elementos</h1>
+					</section>
+				</section>
+
+				<section id="mainStructure">
+					<section>
+						<h1>Main Structure</h1>
+						<ol>
+							<li>
+								Existen alrededor de 28 elementos nuevos con una nueva semántica que se puede usar
+								en las páginas tradicionales "estáticas"
+							</li>
+							<li>
+								Nosotros transformamos la tradicional estructura de marcadores "div" a un sistema semantico
+							</li>
+							<li>
+								Primero lo primero. Necesitamos abrir el editor de codigos y agregamos "DOCTYPE" .
+							</li>
+						</ol>
+					</section>
+					<section>
+						<h2>The <span><</span>!doctype html<span>></span></h2>
+						<ol>
+							<li>Esto es requerido por el explorador para lanzar la verion de html que se ejecutara.</li>
+						</ol>
+					</section>
+					<section>
+						<h2>The <span><</span>meta charset=utf-8<span>></span></h2>
+						<ol>
+							<li>Es el encoding</li>
+						</ol>
+					</section>
+					
+					<section>
+						<img src="img/div1.png">
+					</section>
+
+					<section>
+						<img src="img/div3.png">
+					</section>
+				</section>
+
+				<section id="CSS 3">
+					<section>
+						<h1>CSS</h1>
+						<h3>¿Qué es? ¿Es importante?</h3>
+						<img style="width: 350px;" src="img/img2.jpg">
+
+					</section>
+					<section>
+						<h2>CSS (Cascading Style Sheets)</h2>
+						<ul>
+							<p class="fragment fade-in-then-semi-out">
+						CSS es un <span class="fragment highlight-red">"lenguaje de estilo"</span>
+						que describe como el marcado HTML es presentado al usuario.
+						<span class="fragment highlight-yellow">CSS3</span> es la versión más reciente de las especificaciones de CSS
+						</p>
+						</ul>
+					</section>
+					<section>
+						<h3>¿Por qué debería importarnos?</h3>
+						<p class="fragment fade-in-then-semi-out">
+							En el pasado, para crear gradientes, sombras y esquinas redondeadas,
+							se recurría a una serie de técnicas difíciles.
+							A veces se requerían elementos HTML adicionales.
+						</p>
+					</section>
+
+					<section>
+						<h3>¿Por qué debería importarnos?</h3>
+						<p class="fragment fade-in-then-semi-out">
+							CSS3 le permite incluir estos y otros elementos de diseño
+							de una manera progresiva que lleva a muchos beneficios:
+							<span class="fragment highlight-green">
+									Un marcado más limpio, un código que se puede mantener, menos imágenes extrañas
+									y páginas de carga más rápida.
+								</span>
+						</p>
+					</section>
+
+					<section>
+						<h3>El futuro</h3>
+						<p class="fragment fade-in-then-semi-out">
+							HTML5 y CSS3 son las tecnologías líderes que han dado paso
+							a un mundo mucho más emocionante de la creación de páginas web.
+							<span class="fragment highlight-green">
+									Crear páginas web potentes y fáciles de mantener es más fácil que nunca.
+								</span>
+						</p>
+					</section>
+
+				</section>
+
+			</div>
+		</div>
+
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script>
+
+            // More info https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // More info https://github.com/hakimel/reveal.js#dependencies
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/search/search.js', async: true },
+                    { src: 'plugin/zoom-js/zoom.js', async: true },
+                    { src: 'plugin/notes/notes.js', async: true }
+                ]
+            });
+
+		</script>
+	</body>
+</html>
